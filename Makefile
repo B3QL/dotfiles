@@ -12,6 +12,7 @@ i3-install:
 i3-config:
 	@mkdir -p ${HOME}/.i3
 	@ln -vsf ${PWD}/i3/config ${HOME}/.i3/config
+	@ln -vsf ${PWD}/i3/lockscreen.png ${HOME}/.i3/lockscreen.png
 
 GREEN  := $(shell tput -Txterm setaf 2)
 YELLOW := $(shell tput -Txterm setaf 3)
