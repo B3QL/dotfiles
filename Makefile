@@ -2,7 +2,7 @@
 .PHONY: i3 i3-install i3-config help
 
 ## Install i3wm and copy config
-i3: i3-install i3-confgi
+i3: i3-install i3-config
 
 ## Install i3wm
 i3-install:
