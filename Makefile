@@ -6,13 +6,12 @@ i3: i3-install i3-config
 
 ## Install i3wm
 i3-install:
-	sudo apt-get install -y i3
+	sudo apt-get install -y i3 rofi
 
 ## Copy i3 config
 i3-config:
 	@mkdir -p ${HOME}/.i3
-	@ln -vsf ${PWD}/i3/config ${HOME}/.i3/config
-	@ln -vsf ${PWD}/i3/lockscreen.png ${HOME}/.i3/lockscreen.png
+	@ln -vsf ${PWD}/i3/* ${HOME}/.i3/
 
 GREEN  := $(shell tput -Txterm setaf 2)
 YELLOW := $(shell tput -Txterm setaf 3)
