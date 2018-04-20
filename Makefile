@@ -4,9 +4,14 @@
 ## Install i3wm and copy config
 i3: i3-install i3-config
 
-## Install i3wm
+## Install i3wm with utils
 i3-install:
-	sudo apt-get install -y i3 rofi
+	sudo apt-get install -y i3 rofi git help2man
+	git clone https://github.com/haikarainen/light /tmp/light || true
+	sudo make -C /tmp/light install
+	rm -rf /tmp/light
+
+
 
 ## Copy i3 config
 i3-config:
