@@ -70,7 +70,7 @@
     EDITOR = "vim";
     XDG_DATA_DIRS = "$HOME/.nix-profile/share:$HOME/.share:\${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}";
     DOOMLOCALDIR = "$HOME/.doom.d/.local";
-    PATH = "$HOME/.emacs.d/bin:$HOME/.poetry/bin:$PATH";
+    PATH = "$HOME/.emacs.d/bin:$HOME/.poetry/bin:$HOME/.local/bin:$PATH";
   };
 
   home.file.".emacs.d" = {
